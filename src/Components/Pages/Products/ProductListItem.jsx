@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { Comments } from '../Comments/Comments';
 
 export const ProductListItem = props => {
+    console.log(props);
     return (
         <div className='Product'>
             <div>
@@ -13,6 +15,9 @@ export const ProductListItem = props => {
                 <p>{props.data.description_short}</p>
                 <p>{props.data.price} DKK</p>
                 <Link to={`/products/${props.data.id}`}>Læs Mere</Link>
+            </span>
+            <span>
+                <section><Comments id={props.data.id}/></section>
             </span>
         </div>
     )
