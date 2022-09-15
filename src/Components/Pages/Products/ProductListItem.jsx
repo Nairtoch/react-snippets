@@ -1,0 +1,19 @@
+import { Link } from 'react-router-dom';
+
+export const ProductListItem = props => {
+    return (
+        <div className='Product'>
+            <div>
+                <figure>
+                    <img src={props.data.image} alt="Image of a Home for sale." />
+                </figure>
+            </div>
+            <span>
+                <h3>{props.data.name}</h3>
+                <p>{props.data.description_short}</p>
+                <p>{props.data.price} DKK</p>
+                <Link to={`/products/${props.data.id}`}>Læs Mere</Link>
+            </span>
+        </div>
+    )
+}
