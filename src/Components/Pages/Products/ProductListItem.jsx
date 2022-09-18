@@ -16,9 +16,6 @@ export const ProductListItem = props => {
                 <p>{props.data.price} DKK</p>
                 <Link to={`/products/${props.data.id}`}>Læs Mere</Link>
             </span>
-            <span>
-                <section><Comments id={props.data.id}/></section>
-            </span>
         </div>
     )
 }

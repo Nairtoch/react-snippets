@@ -15,6 +15,20 @@ body {
 }
 
 
+.CommentForm{
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid;
+
+    div {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
 .Product {
     text-align: center;
     border: 1px solid black;

@@ -20,7 +20,9 @@ export const Comments = props => {
             const {comment, created, id, product_id, title, user_id, user} = comments;
             return(
                 <div key={i}>
-                    {comment}
+                    <h4>{title}</h4>
+                    <p>{comment}</p>
+                    <p>{user}, {created}</p>
                 </div>
             )
         })
